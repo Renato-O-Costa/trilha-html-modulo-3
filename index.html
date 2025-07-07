@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Wikipédia - Desafio Dio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <!-- Logo da página -->
+      <div class="logo">
+        <img src="assets/images/logo-www.jpg" alt="Imagem do globo, símbolo da World Wide Web" width="200">
+      </div>
+    </header>
+
+    <!-- Linha divisória (pode ser estilizada no CSS como barra horizontal) -->
+    <div class="bar"></div>
+
+    <!-- Área principal da página -->
+    <div class="content">
+      <!-- Menu lateral esquerdo com links externos -->
+      <aside class="sidebar">
+        <h2>Links úteis</h2>
+        <ul>
+          <li><a href="https://pt.wikipedia.org/wiki/Hist%C3%B3ria_da_Internet" target="_blank">História da Internet</a></li>
+          <li><a href="https://www.w3.org/" target="_blank">W3C-Padrões Web</a></li>
+          <li><a href="https://webfoundation.org/" target="_blank">Web Foundation</a></li>
+        </ul>
+      </aside>
+
+      <!-- Conteúdo central -->
+      <main class="main">
+        <article id="origem">
+          <h1 id="inicio">1. Origem da <abbr title="Rede">Web</abbr></h1>
+          <p>
+            Em 1989, o cientista britânico <strong>Tim Berners-Lee</strong> desenvolveu a World Wide Web enquanto trabalhava no 
+            <abbr title="Organização Européia para a Pesquisa Nuclear">CERN</abbr>. Sua proposta revolucionária permitiu a conexão entre 
+            documentos por meio de hiperlinks, marcando o início da Web como a conhecemos hoje.
+          </p>
+          <br>
+          <figure>
+            <img src="assets/images/tim-berners-lee.jpg" alt="Tim Berners-Lee, criador da Web" title="Tim Berners-Lee, criador da Web" width="180">
+            <figcaption><small>Fonte: Wikimedia Commons – CC BY-SA 3.0</small></figcaption>
+          </figure>
+        </article>
+
+        <article id="web1">
+          <h2>2. Web 1.0</h2>
+          <a href="#inicio"><small>(Voltar)</small></a>
+          <p>
+            A Web 1.0, que predominou nos anos 90, era composta por páginas estáticas, onde os usuários apenas consumiam conteúdo. 
+            Não havia interatividade significativa, e as páginas eram basicamente documentos HTML simples.
+          </p>
+          <ul>
+            <li>Somente leitura</li>
+            <li>Sem login ou formulários</li>
+            <li>Designs simples</li>
+          </ul>
+        </article>
+
+        <article id="web2">
+          <h2>3. Web 2.0</h2>
+          <a href="#inicio"><small>(Voltar)</small></a>
+          <p>
+            A Web 2.0 trouxe uma revolução, permitindo que os usuários interagissem e criassem conteúdo. Redes sociais, blogs e 
+            plataformas colaborativas se tornaram populares, transformando a Web em um espaço dinâmico e participativo.
+          </p>
+          <ol>
+            <li>Redes sociais</li>
+            <li>Blogs e fóruns</li>
+            <li>Streaming e vídeos</li>
+          </ol>
+          <br>
+          <!-- Vídeo embedado do YouTube -->
+          <iframe width="300" src="https://www.youtube.com/embed/A5dD2x2iQx8" title="História da Internet" allowfullscreen></iframe>
+        </article>
+
+        <br>
+
+        <article id="web3">
+          <h2>4. Web 3.0</h2>
+          <a href="#inicio"><small>(Voltar)</small></a>
+          <p>
+            A Web 3.0, também conhecida como Web Semântica, busca tornar a informação mais compreensível para máquinas, permitindo 
+            uma experiência mais inteligente e personalizada. Tecnologias como inteligência artificial e blockchain estão moldando 
+            essa nova fase da Web.
+          </p>
+          <p>
+            Com a Web 3.0, espera-se que a internet se torne mais descentralizada, com maior controle dos usuários sobre seus dados 
+            e uma experiência mais integrada entre diferentes plataformas.
+          </p>
+
+          <!-- Áudio e créditos -->
+          <div class="audio-box">
+            <audio controls>
+              <source src="assets/audio/music-history.mp3" type="audio/mpeg">
+              Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <p class="creditos-audio">
+              Áudio original: 
+              <em>
+                <a href="https://pixabay.com/pt/users/original_soundtrack-50153119/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=366065">Viacheslav Starostin</a>
+                from 
+                <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=366065">Pixabay</a>
+              </em>
+            </p>
+          </div>
+        </article>
+
+        <article id="curiosidades">
+          <h2>5. Curiosidades</h2>
+          <a href="#inicio"><small>(Voltar)</small></a>
+          <p>A seguir, alguns marcos importantes da Web:</p>
+          <br>
+          <table>
+            <caption>Marcos históricos da Web</caption>
+            <thead>
+              <tr>
+                <th>Ano</th>
+                <th>Evento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1989</td>
+                <td>Tim Berners-Lee propõe a Web</td>
+              </tr>
+              <tr>
+                <td>1993</td>
+                <td>Lançamento do navegador Mosaic</td>
+              </tr>
+              <tr>
+                <td>2004</td>
+                <td>Web 2.0 se populariza</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </main>
+
+      <!-- Navegação por âncoras (lateral direita) -->
+      <nav class="anchors">
+        <h2>Neste Artigo</h2>
+        <ul>
+          <li><a href="#origem">Origem da web</a></li>
+          <li><a href="#web1">Web 1.0</a></li>
+          <li><a href="#web2">Web 2.0</a></li>
+          <li><a href="#web3">Web 3.0</a></li>
+          <li><a href="#curiosidades">Curiosidades</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <p><small>2025 - Desafio Recriando a Wikipédia <br> Criado por: Renato de O. Costa</small></p>
+      <p></p>
+    </footer>
+  </body>
+</html>

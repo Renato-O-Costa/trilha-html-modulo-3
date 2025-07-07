@@ -1,0 +1,162 @@
+/*Reset*/
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    padding: 1rem;
+    text-align: center;
+    background-color: #fafafa;
+    border-bottom: solid 1px #ccc;
+}
+
+/*Listas ordenadas/não ordenadas*/
+ul, ol { 
+    margin: 1rem 0;
+    padding-left: 1.5rem;    
+ }
+
+/*Links*/
+a {
+    color: #005fa3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*Tabelas, listas, mídias*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+} 
+
+table thead {
+    background-color: aqua;
+}
+
+
+/*Barra divisória*/
+.bar {
+    background-color: #d4edda;
+    height: 5px;
+}
+
+/*Área com três colunas*/
+.content {
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*Rodapé*/
+.footer {
+    opacity: 1;
+    text-align: center;
+    padding: 1rem;
+    background-color: #B6F6B6;
+    color: #2100F5;
+    border-top: solid 1px #cdcdcd;
+}
+
+/*Âncoras de navegação*/
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+    text-align: justify;
+}
+
+/*Conteúdo principal*/
+.main {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+/*Barras laterais*/
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+    text-align: justify;       
+}
+
+main article figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Controla largura do vídeo*/
+main article iframe {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+figure {
+    text-align: center;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+ /*Box do áudio*/
+.audio-box {
+    max-width: 400px;
+    margin: 0.5rem auto;
+    background-color: #f0f0f0;
+    padding: 0.1rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.audio-box audio {
+    width: 100%;
+}
+
+.creditos-audio {
+    font-size: 0.7rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+/*Responsividade para telas menores*/
+@media (max-width: 768px) {
+    .content {
+        display: block;
+    }
+
+    .sidebar, .main, .anchors {
+        border: none;
+        padding: 0;
+    }
+}
+
+/*Efeito na tabela*/
+table tbody tr:hover {
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease;
+    cursor: default;
+}
